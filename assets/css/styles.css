@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    min-width: 800px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: rgb(48 0 64 / 50%);
+    backdrop-filter: blur(4px);
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 2rem;
+}
+
+form input {
+    margin: 20px 0;
+    text-align: left;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    width: 100px;
+    padding: 5px 0;
+    border: 0;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.container-result {
+    margin: 50px 0;
+    max-width: 640px;
+    background-color: rgba(79, 0, 151, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.error {
+    background-color: rgb(122, 16, 16);
+}
