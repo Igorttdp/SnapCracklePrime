@@ -9,7 +9,7 @@ function SnapCrackleDOM() {
         const resultContainer = document.querySelector('.container-result')
 
         if (!numero.value) emptyError();
-        else if (numero.value == 0) error();
+        else if (numero.value == 0 || numero.value < 0) error();
         else result();
 
         function prime(num) {
