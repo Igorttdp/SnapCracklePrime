@@ -13,7 +13,21 @@
 
 <body>
     <div class="container">
-        <h1>SnapCrackle</h1>
+        <div class="title">
+            <h1>SnapCrackle <abbr title="O que é SnapCrackle?"><sup class="whatIsBtn">?</sup></abbr></h1>
+            <img id="click" src="assets/img/click.png" alt="">
+        </div>
+        <div class="whatIs">
+            <button class="close">X</button>
+            <p>A função <cite>SnapCrackle()</cite> faz um loop que retorna uma string de acordo com as seguintes
+                condições:</p>
+            <p class="explanation">i. Se o número for ímpar, retorna "Snap"</p>
+            <p class="explanation">ii. Se o número for múltiplo de 5, retorna "Crackle"</p>
+            <p class="explanation">iii. Se o número for ímpar e múltiplo de 5, retorna "SnapCrackle"</p>
+            <p class="explanation">iv. Se não seguir nenhuma dessas condições, a função retona o próprio número da
+                sequência.</p>
+            <p class="explanation">v. Em adição, os números que forem primos retornam uma concatenação com "Prime".</p>
+        </div>
         <div class="form-container">
             <form id="form" action="" method="post">
                 <Label>Digite um número</Label>
@@ -22,7 +36,9 @@
                 <br>
                 <button>Enviar</button>
             </form>
-            <div class="container-result"><p class="result">resultado aqui</p></div>
+            <div class="container-result">
+                <p class="result">resultado aqui</p>
+            </div>
         </div>
     </div>
 

@@ -1,6 +1,26 @@
 function SnapCrackleDOM() {
 
-    const form = document.querySelector('#form')
+    const form = document.querySelector('#form');
+    const openWhatIs = document.querySelector('.whatIsBtn');
+    const closeWhatIs = document.querySelector('.close');
+
+
+    function explanation() {
+        const explanation = document.querySelector('.whatIs');
+        const click = document.querySelector('#click');
+
+        openWhatIs.addEventListener('click', () => {
+            explanation.style.display = 'block';
+            click.style.display = 'none'
+        });
+
+        closeWhatIs.addEventListener('click', () => {
+            explanation.style.display = 'none';
+            click.style.display = 'block'
+        })
+    }
+
+    explanation();
 
     form.addEventListener('submit', e => {
         e.preventDefault();
@@ -18,10 +38,10 @@ function SnapCrackleDOM() {
                     return false;
                 }
             }
-        
+
             return true;
         }
-        
+
         function snapCracklePrime(maxValue) {
 
             let snapArray = [];
@@ -34,18 +54,18 @@ function SnapCrackleDOM() {
                     }
                 } else if (i % 5 === 0) {
                     if (prime(i)) {
-                        snapArray.push('CracklePrime')
+                        snapArray.push('CracklePrime');
                     } else {
-                        snapArray.push('Crackle')
+                        snapArray.push('Crackle');
                     }
                 } else if (i % 2 !== 0) {
                     if (i === 1) {
-                        snapArray.push('Snap')
+                        snapArray.push('Snap');
                     } else {
                         if (prime(i)) {
-                            snapArray.push('SnapPrime')
+                            snapArray.push('SnapPrime');
                         } else {
-                            snapArray.push('Snap')
+                            snapArray.push('Snap');
                         }
                     }
                 } else {
@@ -61,7 +81,7 @@ function SnapCrackleDOM() {
 
         function result() {
             resultContainer.classList.remove('error');
-            pResult.innerText = snapCracklePrime(numero.value).join(', ')
+            pResult.innerText = snapCracklePrime(numero.value).join(', ');
         }
 
         function emptyError() {

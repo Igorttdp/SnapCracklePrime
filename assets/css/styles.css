@@ -7,11 +7,40 @@ body {
 
 h1 {
     font-size: 3rem;
+    position: relative;
 }
 
 p {
     font-size: 1.7rem;
     margin: 0;
+}
+
+
+.title {
+    position: relative;
+    width: 400px;
+    text-align: center;
+}
+
+.title img {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}
+
+abbr {
+    position: absolute;
+}
+
+sup {
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+sup:hover {
+    font-size: 3.3rem;
+    transition: all .3s;
 }
 
 .container {
@@ -87,3 +116,35 @@ button:hover {
 .error {
     background-color: rgb(122, 16, 16);
 }
+
+.whatIs {
+    display: none;
+    max-width: 800px;
+    min-height: 200px;
+    padding: 2%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(79, 0, 151, 0.5);
+    position: relative;
+}
+
+.whatIs button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #fff;
+    background: #1a0536;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+}
+
+cite {
+    font-family: monospace;
+}
+
+.explanation {
+    font-size: 1.4rem;
+}
+
